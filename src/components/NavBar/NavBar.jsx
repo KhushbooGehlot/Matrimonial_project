@@ -45,9 +45,9 @@ export default function NavBar() {
         </MDBNavbarToggler>
 
         <MDBCollapse navbar show={showBasic} className='collapse-m'>
-          <MDBNavbarNav className='mr-auto mb-2 mb-lg-0 justify-content-center' >
+          <MDBNavbarNav className=' mb-2 mb-lg-0 justify-content-between' >
             <MDBNavbarItem>
-              <MDBNavbarLink active aria-current='page' href='#' className=' pe-5 nav-itemss'>
+              <MDBNavbarLink active aria-current='page' href='#' className='  nav-itemss'>
 
                 <Nav.Link eventKey="1" href="/" className='text-light'>
                   Home
@@ -55,7 +55,7 @@ export default function NavBar() {
               </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
-              <MDBNavbarLink active aria-current='page' href='#' className='pe-5 nav-itemss'>
+              <MDBNavbarLink active aria-current='page' href='#' className=' nav-itemss'>
 
                 <Nav.Link eventKey="1" href="/ss" className='text-light'>
                   Stories
@@ -63,7 +63,7 @@ export default function NavBar() {
               </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem >
-              <MDBNavbarLink active aria-current='page' href='#' className='pe-5 no-wrap nav-itemss'>
+              <MDBNavbarLink active aria-current='page' href='#' className=' no-wrap nav-itemss'>
 
                 <Nav.Link eventKey="1" href="/AboutUs" className='text-light'>
                   About Us
@@ -71,14 +71,14 @@ export default function NavBar() {
               </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
-              <MDBNavbarLink active aria-current='page' href='#' className='pe-5 nav-itemss'>
+              <MDBNavbarLink active aria-current='page' href='#' className=' nav-itemss'>
                 <Nav.Link eventKey="1" href="/membership" className='text-light'>
                   Membership Plan
                 </Nav.Link>
               </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
-              <MDBNavbarLink active aria-current='page' href='#' className='pe-5 no-wrap nav-itemss'>
+              <MDBNavbarLink active aria-current='page' href='#' className=' no-wrap nav-itemss'>
                 <Nav.Link eventKey="1" href="/ContactUs" className='text-light'>
                   Contant us
                 </Nav.Link>
@@ -87,18 +87,18 @@ export default function NavBar() {
 
             <MDBNavbarItem>
               {
-                auth ? <MDBNavbarLink active aria-current='page' href='#' className='pe-5 no-wrap nav-itemss'>
+                auth ? <MDBNavbarLink active aria-current='page' href='#' className=' no-wrap nav-itemss'>
                   Membership Plan
-                </MDBNavbarLink> : <MDBNavbarLink active aria-current='page' href='#' className='pe-5 no-wrap nav-itemss'>
+                </MDBNavbarLink> : <MDBNavbarLink active aria-current='page' href='#' className=' no-wrap nav-itemss'>
 
                 </MDBNavbarLink>
               }
             </MDBNavbarItem>
             <MDBNavbarItem>
               {
-                auth ? <MDBNavbarLink active aria-current='page' href='#' className='pe-5 no-wrap nav-itemss'>
+                auth ? <MDBNavbarLink active aria-current='page' href='#' className=' no-wrap nav-itemss'>
                   Arun
-                </MDBNavbarLink> : <MDBNavbarLink active aria-current='page' href='#' className='pe-5 no-wrap nav-itemss'>
+                </MDBNavbarLink> : <MDBNavbarLink active aria-current='page' href='#' className=' no-wrap nav-itemss'>
 
                 </MDBNavbarLink>
               }
@@ -114,7 +114,7 @@ export default function NavBar() {
                   <NavDropdown.Item href="#action/3.4" onClick={logout}>
                     Logout
                   </NavDropdown.Item>
-                </NavDropdown> : <MDBNavbarLink active aria-current='page' href='#' className='pe-5 no-wrap nav-itemss'>
+                </NavDropdown> : <MDBNavbarLink active aria-current='page' href='#' className=' no-wrap nav-itemss'>
 
                 </MDBNavbarLink>
               }
