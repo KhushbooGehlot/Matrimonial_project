@@ -21,13 +21,14 @@ import Login from './components/Login/images/login';
 import SuccessStories from './components/Home Page/SuccessStories';
 import AboutUs from './components/About us page/AboutUs';
 import EnquiryPage from './components/About us page/EnquiryPage';
+import PP from './components/PartnerPreference/PP';
 
 
 const App = () => {
   return (
     <div>
       <Router>
-      <NavBar />
+      {/* <NavBar /> */}
         <Routes>
           <Route path="/" element={<HomePage/>}></Route>
           <Route path="/Register" element={<Register/>}></Route>
@@ -44,8 +45,9 @@ const App = () => {
           <Route path="/membership" element={<Membershipcard/>}></Route>
           <Route path="/s " element={<CheckboxButton/>}></Route>
           <Route path="/FamilyDetail" element={<FamilyDetails/>}></Route>
+          <Route path="/pp" element={<PP/>}></Route>
         </Routes>
-      <Footer/>
+      {/* <Footer/> */}
       </Router>
     </div>
   );

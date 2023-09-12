@@ -12,30 +12,59 @@
 }
 
 .FamilyDetails input {
-    background: none;
+    background-color: transparent;
     border: none;
     border-bottom: 1px solid white;
     border-radius: 0;
 }
 
 .FamilyDetails .form-control::placeholder {
-    color: white;
+    color: gray;
 }
 
 .FamilyDetails .form-select {
-    background: none;
+    background-color: transparent;
     border: none;
     border-bottom: 1px solid white;
     border-radius: 0;
     color: white;
 }
 
-.FamilyDetails .SaveBtn {
-    padding: 10px 0;
-    background-color: #ff607bf5;
-    color: white;
-    font-size: 28px;
-    border: none;
-    border-radius: 11px;
+.FamilyDetails .inputClass:focus {
+    box-shadow: none !important;
+}
 
+.FamilyDetails .form-select:focus {
+    box-shadow: none !important;
+}
+
+.FamilyDetails .inputClass {
+    background-color: transparent !important;
+    color: #dddada !important;
+    outline: none !important;
+    border-bottom: 1px solid white !important;
+}
+
+@media (min-width:991px) and (max-width:1200px) {
+    .FamilyDetails .religion_2 {
+        margin-bottom: 0 !important;
+    }
+
+    .FamilyDetails .religion_1 {
+        margin-top: 15px !important;
+    }
+}
+
+@media (max-width:768px) {
+    .FamilyDetails .gap {
+        margin-bottom: 48px !important;
+    }
+
+    .FamilyDetails .religion_1 {
+        margin-bottom: 48px !important;
+    }
+
+    .FamilyDetails .SaveBtn {
+        width: 50% !important;
+    }
 }
