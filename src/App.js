@@ -22,6 +22,7 @@ import SuccessStories from './components/Home Page/SuccessStories';
 import AboutUs from './components/About us page/AboutUs';
 import EnquiryPage from './components/About us page/EnquiryPage';
 import PP from './components/PartnerPreference/PP';
+import PersonalDetails_container from './components/PersonalDetails/PersonalDetails';
 
 
 const App = () => {
@@ -46,6 +47,7 @@ const App = () => {
           <Route path="/s " element={<CheckboxButton/>}></Route>
           <Route path="/FamilyDetail" element={<FamilyDetails/>}></Route>
           <Route path="/pp" element={<PP/>}></Route>
+          <Route path="/personalDetail" element={<PersonalDetails_container/>}></Route>
         </Routes>
       {/* <Footer/> */}
       </Router>
