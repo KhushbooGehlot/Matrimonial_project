@@ -132,17 +132,17 @@ const PP = () => {
                                 </div>
 
                                 <div className="row my-4">
-                                <div className="col-sm-12 col-md-6">
-                                    <label for="Income_range" class="form-label">Highest Income Range</label>
-                                    <select {...register("Income", { required: "Select one option!" })} class="form-select" aria-label="Default select example">
-                                        <option selected disabled value="">Select Income Range</option>
-                                        <option value="Yes">Yes</option>
-                                        <option value="No">No</option>
-                                        <option value="Doesn't Matter">Doesn't Matter</option>
-                                        <option value="Don't Know">Don't Know</option>
-                                    </select>
-                                    <p style={{ color: "red" }}>{errors.Income?.message}</p>
-                                </div>
+                                    <div className="col-sm-12 col-md-6">
+                                        <label for="Income_range" class="form-label">Highest Income Range</label>
+                                        <select {...register("Income", { required: "Select one option!" })} class="form-select" aria-label="Default select example">
+                                            <option selected disabled value="">Select Income Range</option>
+                                            <option value="Yes">Yes</option>
+                                            <option value="No">No</option>
+                                            <option value="Doesn't Matter">Doesn't Matter</option>
+                                            <option value="Don't Know">Don't Know</option>
+                                        </select>
+                                        <p style={{ color: "red" }}>{errors.Income?.message}</p>
+                                    </div>
                                 </div>
 
                                 <div className='d-flex justify-content-center'>

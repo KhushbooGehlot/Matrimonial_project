@@ -1,0 +1,75 @@
+.PersonalDetails {
+    background-image: url("../../images/register_img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.PersonalDetails .form-select {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-radius: 0;
+    border-bottom: 1px solid white;
+    color: rgb(174, 172, 172);
+}
+
+.PersonalDetails .form-label{
+    color: white;
+}
+
+.PersonalDetails .Save_Next_btn {
+    background-color: #fe637a !important;
+    border: none !important;
+}
+
+.PersonalDetails .form-control {
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    color: white;
+    padding-bottom: 10px;
+    border-radius: 0;
+}
+
+.PersonalDetails .form-control::placeholder {
+    color: white;
+}
+
+.PersonalDetails .form-control:focus {
+    box-shadow: none !important;
+    border: none !important;
+    outline: 0;
+    border-bottom: 1px solid white !important;
+}
+
+.PersonalDetails .form-control::placeholder {
+    color: gray;
+}
+
+.PersonalDetails .profile_btns {
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+/* .PersonalDetails .marial{
+    font-size: 14px;
+} */
+
+@media (max-width:768px) {
+    .PersonalDetails .gap {
+        margin-bottom: 30px !important;
+    }
+
+    .PersonalDetails .Save_Next_btn {
+        width: 50% !important;
+    }
+}
+
+/* @media (min-width:768px) and (max-width:992px) {
+    .PersonalDetails .marial{
+        margin: 0!important;
+        padding: 0!important;
+    }
+} */
