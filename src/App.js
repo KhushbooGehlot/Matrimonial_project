@@ -31,7 +31,7 @@ const App = () => {
   return (
     <div>
       <Router>
-      {/* <NavBar /> */}
+      <NavBar />
         <Routes>
           <Route path="/" element={<HomePage/>}></Route>
           <Route path="/Register" element={<Register/>}></Route>
@@ -53,7 +53,7 @@ const App = () => {
           <Route path="/Education" element={<Education/>}></Route>
           {/* <Route path="/Photo_upload" element={<Photo_Uploads/>}></Route> */}
         </Routes>
-      {/* <Footer/> */}
+      <Footer/>
       </Router>
     </div>
   );
