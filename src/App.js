@@ -13,7 +13,7 @@ import Order_Summary from './components/Membership/Order_Summary';
 import Blog from './components/Blogs/Blog';
 import Blog_details from './components/Blogs/blog_detail';
 import Register from './components/Register/Register';
-
+import Address from './components/Stepper/Address/Address';
 import CheckboxButton from './components/text';
 import Matches from './components/Matches/Matches';
 import FamilyDetails from './components/FamilyDetails/FamilyDetails';
@@ -28,15 +28,15 @@ const App = () => {
   return (
     <div>
       <Router>
-      {/* <NavBar /> */}
+      <NavBar />
         <Routes>
           <Route path="/" element={<HomePage/>}></Route>
+          <Route path="/add" element={<Address/>}></Route>
           <Route path="/Register" element={<Register/>}></Route>
           <Route path="/LogIn" element={<Login/>}></Route>
           <Route path="/ss" element={<SuccessStories/>}></Route>
           <Route path="/AboutUs" element={<AboutUs/>}></Route>
           <Route path="/ContactUs" element={<EnquiryPage/>}></Route>
-
           <Route path="/Dropdown" element={<Dropdown/>}></Route>
           <Route path="/matches" element={<Matches/>}></Route>
           <Route path="/blog" element={<Blog/>}></Route>
@@ -47,7 +47,7 @@ const App = () => {
           <Route path="/FamilyDetail" element={<FamilyDetails/>}></Route>
           <Route path="/pp" element={<PP/>}></Route>
         </Routes>
-      {/* <Footer/> */}
+      <Footer/>
       </Router>
     </div>
   );
