@@ -15,6 +15,7 @@ function KYC() {
   return (
     <>
       <div className="photo_uploads">
+        <Stepper6/>
         <div className="d-flex justify-content-center">
           <div className="mt-5">
             <img src="heart.png" alt="" />
