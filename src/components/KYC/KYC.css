@@ -1,0 +1,38 @@
+.photo_uploads{
+    background-image: url("../../images/register_img.png");
+   background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.photo_uploads .input{
+    background-color: #ff00d4f5;
+    border-radius: 50px;
+}
+.photo_uploads ::-webkit-file-upload-button {
+    display: none !important;
+}
+.photo_uploads .bttn{
+    background-color: #FF607BF5;
+    
+}
+/* #file-input {
+    display: none;
+} */
+@media screen and (max-width: 768px) {
+    .photo_uploads .input{
+        width: 35vw !important;
+    }
+    .photo_uploads .bttn{
+        width: 35vw !important;
+
+    }
+      }
+@media screen and (max-width: 426px) {
+    .photo_uploads .input{
+        width: 50vw !important;
+    }
+    .photo_uploads .bttn{
+        width: 50vw !important;
+
+    }
+      }
