@@ -3,6 +3,7 @@ import "./PP.css"
 import { Controller, useForm } from "react-hook-form";
 
 import Select from 'react-select'
+import Stepper7 from '../Stepper/Stepper/Stepper7';
 
 
 const PP = () => {
@@ -42,6 +43,7 @@ const PP = () => {
     return (
         <>
             <div className="PP">
+                <Stepper7/>
                 <div className="container">
                     <div className="row">
                         <div className="col-12 col-sm-8 mx-auto">
