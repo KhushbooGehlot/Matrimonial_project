@@ -1,0 +1,43 @@
+.address_container{
+    background-image: url("../../../images/register_img.png");
+    background-repeat: no-repeat;
+     background-size: cover;
+     
+     background-position: center;
+}
+.address_select_label{
+    color: white;
+    font-weight: bold;
+}
+.address_countary{
+    background-color: transparent;
+    border: none;
+    color: white;
+      outline: none;
+    border-bottom: 1px solid white;
+}
+
+.address_input{
+    background-color: transparent;
+    border: none;
+    color: white;
+    outline: none;
+    
+}
+.address_input2{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    border-bottom: 1px solid white;
+}
+.address_address_div{
+    border: 1px solid white;
+    font-size: 1.8rem;
+    color: white;
+}
+@media screen and (max-width: 567px) {
+    .address_address_div{
+        font-size: 1rem;
+    }
+}

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./PersonalDetails.css";
 import { useForm } from "react-hook-form";
+import Stepper from "../Stepper/Stepper/Stepper";
 
 function PersonalDetails_container() {
   const {
@@ -21,93 +22,9 @@ function PersonalDetails_container() {
   const [Self, setSelf] = useState("");
   const [Friend, setFriend] = useState("");
 
-  const self = () => {
-    // Change the color when the button is clicked
-    setMyBrother("");
-    setMyDaughter("");
-    setmale("");
-    setMySister("");
-    setmyson("");
-    setFemale("");
-    setSelf("#fe637a");
-    setFriend("");
-  };
-  const friend = () => {
-    // Change the color when the button is clicked
-    setMyBrother("");
-    setMyDaughter("");
-    setmale("");
-    setFriend("#fe637a");
-    setMySister("");
-    setmyson("");
-    setFemale("");
-    setSelf("");
-  };
-  const myBrother = () => {
-    // Change the color when the button is clicked
-    setMyBrother("#fe637a");
-    setmale("#fe637a");
-    setmyson("");
-    setMySister("");
-    setMyDaughter("");
-    setFemale("");
-    setFriend("");
-    setSelf("");
-  };
-  const mySon = () => {
-    // Change the color when the button is clicked
-    setmyson("#fe637a");
-    setmale("#fe637a");
-    setMyBrother("");
-
-    setMySister("");
-    setMyDaughter("");
-    setFemale("");
-    setFriend("");
-    setSelf("");
-  };
-  const mySister = () => {
-    // Change the color when the button is clicked
-    setMySister("#fe637a");
-    setFemale("#fe637a");
-    setmyson("");
-    setMyBrother("");
-    setmale("");
-    setFriend("");
-    setSelf("");
-    setMyDaughter("");
-  };
-  const myDaughter = () => {
-    // Change the color when the button is clicked
-    setMySister("");
-    setFemale("#fe637a");
-    setMyBrother("");
-    setMyDaughter("#fe637a");
-    setmale("");
-    setmyson("");
-    setFriend("");
-    setSelf("");
-  };
-  const Male = () => {
-    // Change the color when the button is clicked
-    setMySister("");
-    setFemale("");
-    setMyBrother("");
-    setMyDaughter("");
-
-    setmale("#fe637a");
-    setmyson("");
-  };
-  const female = () => {
-    // Change the color when the button is clicked
-    setMySister("");
-    setFemale("#fe637a");
-    setMyBrother("");
-    setMyDaughter("");
-
-    setmale("");
-    setmyson("");
-  };
+  
+ 
+ 
 
   const onSubmit = (data) => {
     console.log(data);
@@ -144,6 +61,7 @@ function PersonalDetails_container() {
   return (
     <>
       <div className="PersonalDetails">
+        <Stepper/>
         <div className="container">
   
           <form onSubmit={handleSubmit(onSubmit)}>
@@ -202,8 +120,7 @@ function PersonalDetails_container() {
                       <input type="radio" style={{ display: "none" }} />
                       <label
                         htmlFor=""
-                        onClick={self}
-                        style={{ backgroundColor: Self }}
+                     
                         className="   profile_btns px-4 py-2"
                       >
                         Self
@@ -213,8 +130,8 @@ function PersonalDetails_container() {
                       <input type="radio" style={{ display: "none" }} />
                       <label
                         htmlFor=""
-                        style={{ backgroundColor: MyBrother }}
-                        onClick={myBrother}
+                  
+        
                         className="profile_btns px-2 py-2"
                       >
                         My Brother
@@ -228,8 +145,6 @@ function PersonalDetails_container() {
                       />
                       <label
                         htmlFor=""
-                        style={{ backgroundColor: MySister }}
-                        onClick={mySister}
                         className="profile_btns px-2 py-2"
                       >
                         My Sister
@@ -243,8 +158,8 @@ function PersonalDetails_container() {
                       />
                       <label
                         htmlFor=""
-                        style={{ backgroundColor: myson }}
-                        onClick={mySon}
+                        
+                     
                         className="profile_btns px-3 py-2"
                       >
                         My Son
@@ -258,8 +173,6 @@ function PersonalDetails_container() {
                       />
                       <label
                         htmlFor=""
-                        onClick={myDaughter}
-                        style={{ backgroundColor: MyDaughter }}
                         className="profile_btns px-3 py-2 "
                       >
                         My Daughter
@@ -273,8 +186,7 @@ function PersonalDetails_container() {
                       />
                       <label
                         htmlFor=""
-                        onClick={friend}
-                        style={{ backgroundColor: Friend }}
+                        
                         className="profile_btns px-3 py-2"
                       >
                         Friend
@@ -292,8 +204,6 @@ function PersonalDetails_container() {
                     <label
                       htmlFor=""
                       className="profile_btns px-4 py-2   gap"
-                      onClick={Male}
-                      style={{ backgroundColor: male }}
                     >
                       Male
                     </label>
@@ -302,8 +212,6 @@ function PersonalDetails_container() {
                     <input type="radio" style={{ display: "none" }} />
                     <label
                       htmlFor=""
-                      onClick={female}
-                      style={{ backgroundColor: Female }}
                       className="profile_btns px-3    py-2"
                     >
                       Female
@@ -381,8 +289,7 @@ function PersonalDetails_container() {
                     <label
                       htmlFor=""
                       className="profile_btns px-3 py-2 marial"
-                      onClick={Male}
-                      style={{ backgroundColor: male }}
+       
                     >
                       Unmarried
                     </label>
@@ -391,8 +298,6 @@ function PersonalDetails_container() {
                     <input type="radio" style={{ display: "none" }} />
                     <label
                       htmlFor=""
-                      onClick={female}
-                      style={{ backgroundColor: Female }}
                       className="profile_btns px-3 marial py-2"
                     >
                       Divorced
@@ -402,8 +307,6 @@ function PersonalDetails_container() {
                     <input type="radio" style={{ display: "none" }} />
                     <label
                       htmlFor=""
-                      onClick={female}
-                      style={{ backgroundColor: Female }}
                       className="profile_btns px-3 marial py-2"
                     >
                       Windower
@@ -413,8 +316,6 @@ function PersonalDetails_container() {
                     <input type="radio" style={{ display: "none" }} />
                     <label
                       htmlFor=""
-                      onClick={female}
-                      style={{ backgroundColor: Female }}
                       className="profile_btns px-3 marial py-2 gap"
                     >
                       Annulled
@@ -455,8 +356,6 @@ function PersonalDetails_container() {
                     <label
                       htmlFor=""
                       className="profile_btns px-4 py-2"
-                      onClick={Male}
-                      style={{ backgroundColor: male }}
                     >
                       Yes
                     </label>
@@ -465,8 +364,6 @@ function PersonalDetails_container() {
                     <input type="radio" style={{ display: "none" }} />
                     <label
                       htmlFor=""
-                      onClick={female}
-                      style={{ backgroundColor: Female }}
                       className="profile_btns px-4 py-2"
                     >
                       No
@@ -484,8 +381,6 @@ function PersonalDetails_container() {
                     <label
                       htmlFor=""
                       className="profile_btns px-4 py-2   gap"
-                      onClick={Male}
-                      style={{ backgroundColor: male }}
                     >
                       Yes
                     </label>
@@ -494,8 +389,7 @@ function PersonalDetails_container() {
                     <input type="radio" style={{ display: "none" }} />
                     <label
                       htmlFor=""
-                      onClick={female}
-                      style={{ backgroundColor: Female }}
+              
                       className="profile_btns px-3    py-2"
                     >
                       No

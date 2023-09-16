@@ -1,6 +1,7 @@
 import React from 'react';
 import "./FamilyDetails.css"
 import { useForm } from "react-hook-form";
+import Stepper3 from '../Stepper/Stepper/Stepper3';
 
 const FamilyDetails = () => {
     const { register , handleSubmit , formState:{errors}} = useForm();
@@ -9,6 +10,7 @@ const FamilyDetails = () => {
     return (
         <>
             <div className="FamilyDetails">
+             <Stepper3/>
                 <div className="container">
                     <div className="row">
                         <div className="col my-3 d-flex justify-content-center">

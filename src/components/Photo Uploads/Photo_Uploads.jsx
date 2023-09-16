@@ -15,6 +15,7 @@ function Photo_Uploads() {
   return (
     <>
       <div className="photo_uploads">
+        <Stepper5/>
         <div className="d-flex justify-content-center">
           <div className="mt-5">
             <img src="heart.png" alt="" />

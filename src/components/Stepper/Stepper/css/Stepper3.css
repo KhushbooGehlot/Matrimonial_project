@@ -1,0 +1,108 @@
+.stepper3{
+    /* background-color: transparent!important ;
+    backdrop-filter: blur(8px); */
+    /* background-color: blue; */
+    height: 7rem;
+    display: flex;
+
+    box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.3);
+    /* border: 1px solid black; */
+    
+}
+
+.stepper3 .Personal_detail,.Educational,.Family_Detail,.Address,.Photo_upload,.Kyc,.PartnerPerference{
+    width: 10rem!important;
+    height: 6rem!important;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.stepper3 .Personal_detail_span{
+    background-color:white;
+    width: 2.5rem!important;
+    height: 2.5rem!important;
+    display: flex;
+    align-items: center;
+    
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid pink;
+}
+.stepper3 .Personal_detail_span1{
+    background-color:rgb(179, 23, 119);
+    width: 2.5rem!important;
+    height: 2.5rem!important;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+   
+}
+.stepper3 .Educational_detail_span{
+    background-color:pink;
+    width: 0.5rem!important;
+    height: 0.5rem!important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid pink;
+}
+
+@media screen and (max-width: 1200px){
+
+    .stepper3 .Personal_detail,.Educational,.Family_Detail,.Address,.Photo_upload,.Kyc,.PartnerPerference{
+        font-size: 0.6rem;
+        width: 8rem!important;
+        height: 6rem!important;
+    }
+}
+@media screen and (max-width: 992px){
+    .stepper3 .Personal_detail,.Educational,.Family_Detail,.Address,.Photo_upload,.Kyc,.PartnerPerference{
+        font-size: 0.5rem;
+        width: 6rem!important;
+        height: 6rem!important;
+    }
+    .stepper3 .Personal_detail_span{
+        width: 2rem!important;
+    height: 2rem!important;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .stepper3 .Personal_detail,.Educational,.Family_Detail,.Address,.Photo_upload,.Kyc,.PartnerPerference{
+        font-size: 0.4rem;
+        width: 4.5rem!important;
+        height: 6rem!important;
+    }
+    .stepper3 .Personal_detail{
+        text-align: center;
+    }
+    .stepper3 .Personal_detail_span1{
+        width: 1.7rem!important;
+       font-size: 1rem;
+    height: 1.7rem!important;
+    }
+}
+@media screen and (max-width: 504px){
+    .stepper3 .Personal_detail,.Educational,.Family_Detail,.Address,.Photo_upload,.Kyc,.PartnerPerference{
+        
+        width: 4rem!important;
+        height: 6rem!important;
+    }
+}
+@media screen and (max-width: 448px){
+    .stepper3 .Personal_detail,.Educational,.Family_Detail,.Address,.Photo_upload,.Kyc,.PartnerPerference{
+        
+        width: 3rem!important;
+        height: 6rem!important;
+    }
+}
+@media screen and (max-width: 335px){
+    .stepper3 .Personal_detail,.Educational,.Family_Detail,.Address,.Photo_upload,.Kyc,.PartnerPerference{
+        
+        width: 2.5rem!important;
+        height: 6rem!important;
+    }
+}
+

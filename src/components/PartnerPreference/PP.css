@@ -2,7 +2,7 @@
     background-image: url("../../../public/change_pass_bg.jpg");
     background-size: cover;
     background-position: center;
-    color: white;
+   
 }
 
 .PP .form-select:focus {
@@ -18,3 +18,32 @@
     border-bottom: 1px solid white;
 }
 
+.css-t3ipsp-control{
+    background-color: transparent!important;
+    box-shadow: none!important;
+  
+}
+
+.css-t3ipsp-control:focus{
+    box-shadow: none!important;
+    outline: none!important;
+}
+
+.css-1dimb5e-singleValue{
+    color: white;
+}
+
+.css-13cymwt-control{
+    background-color: transparent!important;
+    border: none!important;
+    box-shadow: none!important;
+    
+    outline: none!important;
+    color: white!important;
+    border-radius: 0;
+    border-bottom: 1px solid white!important;
+}
+
+.css-13cymwt-control::placeholder{
+    color: white;
+}

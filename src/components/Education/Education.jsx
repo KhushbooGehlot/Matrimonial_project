@@ -1,6 +1,7 @@
 import React from 'react';
 import "./Education.css";
 import { useForm } from "react-hook-form";
+import Stepper2 from '../Stepper/Stepper/Stepper2';
 
 const Education = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
@@ -8,6 +9,7 @@ const Education = () => {
     return (
         <>
             <div className="Education">
+                <Stepper2/>
                 <div className="container">
                     <div className="row">
                         <div className="col-12 col-sm-8 mx-auto">
