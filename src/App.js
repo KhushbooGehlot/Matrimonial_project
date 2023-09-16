@@ -23,6 +23,8 @@ import AboutUs from './components/About us page/AboutUs';
 import EnquiryPage from './components/About us page/EnquiryPage';
 import PP from './components/PartnerPreference/PP';
 import PersonalDetails_container from './components/PersonalDetails/PersonalDetails';
+import Education from './components/Education/Education';
+// import Photo_Uploads from './components/Photo Uploads/Photo_Uploads';
 
 
 const App = () => {
@@ -48,6 +50,8 @@ const App = () => {
           <Route path="/FamilyDetail" element={<FamilyDetails/>}></Route>
           <Route path="/pp" element={<PP/>}></Route>
           <Route path="/personalDetail" element={<PersonalDetails_container/>}></Route>
+          <Route path="/Education" element={<Education/>}></Route>
+          {/* <Route path="/Photo_upload" element={<Photo_Uploads/>}></Route> */}
         </Routes>
       {/* <Footer/> */}
       </Router>

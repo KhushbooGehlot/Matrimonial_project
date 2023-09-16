@@ -1,0 +1,71 @@
+.Education {
+    background-image: url("../../../public/change_pass_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.Education .form-label {
+    color: white;
+}
+
+.Education .form-select {
+    background-color: transparent;
+    border: none;
+    color: rgb(174, 172, 172);
+    border-radius: 0;
+    border-bottom: 1px solid white;
+}
+
+.Education .form-select:focus {
+    box-shadow: none !important;
+    border: none !important;
+    outline: 0;
+    border-bottom: 1px solid white !important;
+}
+
+.Education .form-control {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    border-radius: 0;
+}
+
+.Education .form-control::placeholder {
+    color: rgb(174, 172, 172);
+}
+
+.Education .school_clg_input {
+    margin-top: 32px;
+}
+
+@media (max-width:768px) {
+    .Education .gap {
+        margin-bottom: 40px !important;
+    }
+
+    .Education .school_clg_input {
+        margin-top: 0 !important;
+    }
+
+    .Education .SaveButton {
+        width: 50% !important;
+    }
+}
+
+@media (max-width:375px) {
+    .Education h2 {
+        font-size: 20px;
+    }
+}
+
+@media (min-width:576px) and (max-width:768px) {
+    .Education h2 {
+        font-size: 23px;
+    }
+}
+@media (min-width:768px) and (max-width:992px) {
+    .Education .highest_qua{
+        font-size: 15px;
+    }
+}
